@@ -17,7 +17,7 @@ RSpec.configure do |config|
     end
   end
 
-  config.after(:each, type: :request) do
+  config.after(:each, type: :api) do
     response ||= last_response
     request ||= last_request
 
